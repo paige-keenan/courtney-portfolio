@@ -1,0 +1,73 @@
+// application.scss
+
+// Variables
+$headerline01: 'Lobster', sans-serif, serif;
+$headerline02: 'Josefin Sans', sans-serif, serif;
+$body-font: 'Times New Roman';
+$link-color: #000;
+
+// Imports
+@import 'animations';
+@import 'header';
+@import 'main';
+
+// Global
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-family: $headerline01;
+  font-size: 50px;
+  letter-spacing: 3px;
+  padding: 0 20px 5px;
+}
+
+h3 {
+  font-family: $headerline02;
+  font-size: 30px;
+  letter-spacing: 1px;
+  padding: 0 20px;
+}
+
+h4 {
+  background: #000;
+  display: inline-block;
+  font-family: $headerline02;  
+  font-size: 30px;
+  letter-spacing: 1px;
+  padding: 8px 8px 2px;
+}
+
+h5 {
+  background: #000;
+  display: inline-block;
+  font-family: $headerline02;  
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 5px 5px 0;
+  margin: 5px 5px 0 0;
+}
+
+p {
+  font-family: $body-font;
+  font-size: 14px;
+  padding: 15px 0 0;
+  line-height: 22px;
+  display: inline-block;
+}
+
+a {
+  font-family: $body-font;
+  color: $link-color;
+  display: inline-block;
+  text-decoration: underline;
+  padding: 0 5px;
+}
+
+li {
+  list-style: none;	
+}

@@ -1,0 +1,365 @@
+// main.scss
+
+// Variables
+$project-one-main: #37f799;
+$project-two-main: #f7ef3b;
+$project-three-main: #3BF7EC;
+$project-four-main: #8A83D3;
+$project-five-main: #E96769;
+$project-six-main: #5E81ED;
+$project-seven-main: #ED8B5E;
+$project-eight-main: #00A5B6;
+$project-nine-main: #EAB5EF;
+$project-ten-main: #00E3B5;
+
+.main {
+  padding: 20px 0;
+
+  &__project {
+
+    &__content-container {
+      padding: 15px;
+
+      &__team-member {
+        width: 100%;
+
+        p {
+          margin: 0;
+          padding: 10px 0 0;
+        }
+      }
+    }
+  }
+
+// PROJECT ONE
+  &__project-one {
+    h4,
+    h5 {
+      color: $project-one-main;
+    }
+
+    &__one {
+      background: url('../../images/mall/mall01.jpg') no-repeat center;
+      background-size: cover;
+    }
+
+    &__two {
+      background: $project-one-main;
+    }
+
+    &__three {
+      background: url('../../images/mall/mall02.jpg') no-repeat center;
+      background-size: cover;
+    }
+  }	
+
+// PROJECT TWO
+  &__project-two {
+    h4,
+    h5 {
+      color: $project-two-main;
+    }
+
+    &__one {
+      background: url('../../images/sok/sok01.jpg') no-repeat center;
+      background-size: cover;
+    }
+
+    &__two {
+      background: $project-two-main;
+    }
+
+    &__three {
+      background: url('../../images/sok/sok02.jpg') no-repeat center;
+      background-size: cover;
+    }
+  } 
+
+// PROJECT THREE
+  &__project-three {
+    h4,
+    h5 {
+      color: $project-three-main;
+    }
+
+    &__one {
+      background: url('../../images/parallel/parallel01.jpg') no-repeat center;
+      background-size: cover;
+    }
+
+    &__two {
+      background: $project-three-main;
+    }
+
+    &__three {
+      background: url('../../images/parallel/parallel02.jpg') no-repeat center;
+      background-size: cover;
+    }
+
+    &__four {
+      background: url('../../images/parallel/parallel03.jpg') no-repeat center;
+      background-size: cover;
+    }    
+  }       	
+
+// PROJECT FOUR
+  &__project-four {
+    h4,
+    h5 {
+      color: $project-four-main;
+    }
+
+    &__one {
+      background: url('../../images/ben-howard/benHoward01.jpg') no-repeat center;
+      background-size: cover;
+    }
+
+    &__two {
+      background: $project-four-main;
+    }
+
+    &__three {
+      background: url('../../images/ben-howard/benHoward02.jpg') no-repeat center;
+      background-size: cover;
+    }
+
+    &__four {
+      background: url('../../images/ben-howard/benHoward03.jpg') no-repeat center;
+      background-size: cover;
+    }
+
+    &__five {
+      background: url('../../images/ben-howard/benHoward04.jpg') no-repeat center;
+      background-size: cover;
+    }    
+  } 
+
+// PROJECT FIVE
+  &__project-five {
+    h4,
+    h5 {
+      color: $project-five-main;
+    }
+
+    &__one {
+      background: url('../../images/whataburger/whataburger01.jpg') no-repeat center;
+      background-size: cover;
+    }
+
+    &__two,
+    &__three {
+      background: $project-five-main;
+    }
+
+    &__four {
+      background: url('../../images/whataburger/whataburger02.jpg') no-repeat center;
+      background-size: cover;
+    }
+
+    &__five {
+      background: url('../../images/whataburger/whataburger03.jpg') no-repeat center;
+      background-size: cover;
+    }
+
+    &__six {
+      background: url('../../images/whataburger/whataburger04.jpg') no-repeat center;
+      background-size: cover;
+    }
+
+    &__seven {
+      background: url('../../images/whataburger/whataburger05.jpg') no-repeat center;
+      background-size: cover;
+    }        
+  }    
+
+// PROJECT SIX
+  &__project-six {
+    h4,
+    h5 {
+      color: $project-six-main;
+    }
+
+    &__one {
+      background: url('../../images/tounges/tounges01.jpg') no-repeat center;
+      background-size: cover;
+    }
+
+    &__two,
+    &__three {
+      background: $project-six-main;
+    }  
+  } 
+
+// PROJECT SEVEN
+  &__project-seven {
+    h4,
+    h5 {
+      color: $project-seven-main;
+    }
+
+    &__one {
+      background: url('../../images/card/card01.jpg') no-repeat center;
+      background-size: cover;
+    }
+
+    &__two {
+      background: $project-seven-main;
+    }  
+
+    &__three {
+      background: url('../../images/card/card02.jpg') no-repeat center;
+      background-size: cover;
+    }
+
+    &__four {
+      background: url('../../images/card/card03.jpg') no-repeat center;
+      background-size: cover;
+    }
+
+    &__five {
+      background: url('../../images/card/card04.jpg') no-repeat center;
+      background-size: cover;
+    }            
+  } 
+
+// PROJECT EIGHT
+  &__project-eight {
+    h4,
+    h5 {
+      color: $project-eight-main;
+    }
+
+    &__one {
+      background: url('../../images/brain-food/brainfood01.jpg') no-repeat center;
+      background-size: cover;
+    }
+
+    &__two {
+      background: $project-eight-main;
+    }  
+
+    &__three {
+      background: url('../../images/brain-food/brainfood02.jpg') no-repeat center;
+      background-size: cover;
+    }
+
+    &__four {
+      background: url('../../images/brain-food/brainfood03.jpg') no-repeat center;
+      background-size: cover;
+    }
+
+    &__five {
+      background: url('../../images/brain-food/brainfood04.jpg') no-repeat center;
+      background-size: cover;
+    }  
+
+    &__six {
+      background: url('../../images/brain-food/brainfood05.jpg') no-repeat center;
+      background-size: cover;
+    }                
+  } 
+
+// PROJECT NINE
+  &__project-nine {
+    h4,
+    h5 {
+      color: $project-nine-main;
+    }
+
+    &__one {
+      background: url('../../images/cosmic/cosmic01.jpg') no-repeat center;
+      background-size: cover;
+    }
+
+    &__two {
+      background: $project-nine-main;
+    }  
+
+    &__three {
+      background: url('../../images/cosmic/cosmic02.jpg') no-repeat center;
+      background-size: cover;
+    }
+
+    &__four {
+      background: url('../../images/cosmic/cosmic03.jpg') no-repeat center;
+      background-size: cover;
+    }
+
+    &__five {
+      background: url('../../images/cosmic/cosmic04.jpg') no-repeat center;
+      background-size: cover;
+    }  
+
+    &__six {
+      background: url('../../images/cosmic/cosmic05.jpg') no-repeat center;
+      background-size: cover;
+    }                
+  }  
+
+// PROJECT TEN
+  &__project-ten {
+    h4,
+    h5 {
+      color: $project-ten-main;
+    }
+
+    &__one {
+      background: url('../../images/alice/alice01.jpg') no-repeat center;
+      background-size: cover;
+    }
+
+    &__two,
+    &__three {
+      background: $project-ten-main;
+    }                
+  }          
+
+  .carousel {
+    overflow: hidden;
+    width: 100%;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translate3d(0,0,0) scale3d(1,1,1);
+    -webkit-transform-style: preserve-3d;
+    height: 350px;
+    margin-bottom: 30px;
+
+    ul {
+      -webkit-transform: translate3d(0%,0,0) scale3d(1,1,1);
+      -moz-transform: translate3d(0%,0,0) scale3d(1,1,1);
+      -ms-transform: translate3d(0%,0,0) scale3d(1,1,1);
+      -o-transform: translate3d(0%,0,0) scale3d(1,1,1);
+      transform: translate3d(0%,0,0) scale3d(1,1,1);
+      overflow: hidden;
+      -webkit-backface-visibility: hidden;
+      -webkit-transform-style: preserve-3d;  
+
+      -webkit-box-shadow: 0 0 20px rgba(0,0,0,.2);
+      box-shadow: 0 0 20px rgba(0,0,0,.2);
+      position: relative;
+      
+      &.animate {
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        -o-transition: all .3s;
+        transition: all .3s;      
+      }  
+    }
+
+    li {
+      float: left;
+      overflow: hidden;
+      -webkit-transform-style: preserve-3d;
+      -webkit-transform: translate3d(0,0,0);    
+    }
+  } 
+}
+
+html, body, .carousel, .carousel ul, .carousel li {
+  min-height: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+

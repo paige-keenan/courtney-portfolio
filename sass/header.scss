@@ -1,0 +1,19 @@
+// header.scss
+
+.header {
+  -webkit-animation: 10s headerColors infinite;
+  animation: 10s headerColors infinite;
+  height: 100vh;
+  position: relative; 
+  width: 100%;
+  
+  &__logo {
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 60%;
+  }
+}
