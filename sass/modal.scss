@@ -1,0 +1,56 @@
+// modal.scss
+
+.modal {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: 0 auto;
+	background: rgba(18, 18, 18, 0.84);
+
+	&__container {
+		max-width: 60%;
+		overflow-x: scroll;
+		height: 90vh;
+		position: absolute;
+		top: 5vh;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		height: 90vh;
+		background: #fffcf6;
+		border: 10px solid black;
+
+		&__exit {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 40px;
+			height: 40px;
+
+			img {
+				width: 100%;
+				height: 100%;
+			}
+		}		
+	}
+
+	&ized {
+		position: absolute;
+		top: 5vh;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		height: 90%;
+	}
+
+	&.show {
+		display: block;
+	}
+}
+
+.modalify {
+	cursor: pointer;
+}

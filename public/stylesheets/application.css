@@ -140,12 +140,12 @@
   background: url('../../images/mall/mall07.jpg') no-repeat center;
   background-size: cover; }
 .main__project-two h4, .main__project-two h5 {
-  color: #f7ef3b; }
+  color: #eae1ff; }
 .main__project-two__one {
   background: url('../../images/sok/sok01.jpg') no-repeat center;
   background-size: cover; }
 .main__project-two__two {
-  background: #f7ef3b; }
+  background: #eae1ff; }
 .main__project-two__three {
   background: url('../../images/sok/sok02.jpg') no-repeat center;
   background-size: cover; }
@@ -171,17 +171,14 @@
   background: url('../../images/sok/sok09.gif') no-repeat center;
   background-size: cover; }
 .main__project-three h4, .main__project-three h5 {
-  color: #3BF7EC; }
+  color: #8bc9ff; }
 .main__project-three__one {
   background: url('../../images/parallel/parallel01.jpg') no-repeat center;
   background-size: cover; }
 .main__project-three__two {
-  background: #3BF7EC; }
+  background: #8bc9ff; }
 .main__project-three__three {
   background: url('../../images/parallel/parallel02.jpg') no-repeat center;
-  background-size: cover; }
-.main__project-three__four {
-  background: url('../../images/parallel/parallel03.jpg') no-repeat center;
   background-size: cover; }
 .main__project-four h4, .main__project-four h5 {
   color: #8A83D3; }
@@ -341,9 +338,55 @@ html, body, .carousel, .carousel ul, .carousel li {
   margin: 0;
   position: relative; }
 
+html {
+  background: #fffcf6; }
+
 @media screen and (min-width: 768px) {
   .carousel li {
     min-height: auto; } }
+
+.modal {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+  background: rgba(18, 18, 18, 0.84); }
+  .modal__container {
+    max-width: 60%;
+    overflow-x: scroll;
+    height: 90vh;
+    position: absolute;
+    top: 5vh;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    height: 90vh;
+    background: #fffcf6;
+    border: 10px solid black; }
+    .modal__container__exit {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 40px;
+      height: 40px; }
+      .modal__container__exit img {
+        width: 100%;
+        height: 100%; }
+  .modalized {
+    position: absolute;
+    top: 5vh;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    height: 90%; }
+  .modal.show {
+    display: block; }
+
+.modalify {
+  cursor: pointer; }
 
 * {
   box-sizing: border-box;
