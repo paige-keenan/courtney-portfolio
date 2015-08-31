@@ -31,7 +31,6 @@ $(function() {
             if (distanceFromLeft >= halfWay) {
                 var dataPosition = $(this).parent('ul').attr('data-position', -1 * (percentChange * groupIndex));
                 var dataCurrent = $(this).attr('data-current', - (percentChange * groupIndex));
-                
 
                 if($(this).hasClass('last')) {
                     event.preventDefault();
@@ -42,7 +41,6 @@ $(function() {
                 var position = parseInt($(this).parent('ul').attr('data-position'));
                 var moveBack = parseInt($(this).parent().find('.group').attr('data-current'));
                 moveBack = moveBack * (groupIndex);
-                console.log($(this).prev().attr('data-current'));
                 
                 var moveHere = $(this).prev().prev().attr('data-current');
                 parseInt(moveHere);
@@ -50,8 +48,6 @@ $(function() {
                 if($(this).index() === 1 ) {
                     moveHere = 0;
                 }
-         
-
 
                 $(this).parent('ul').css({'transform': 'translateX(' + moveHere +'%)'});
             }
