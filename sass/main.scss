@@ -505,6 +505,10 @@ html, body, .carousel, .carousel ul, .carousel li {
   position: relative;
 }
 
+html {
+  background: #fffcf6;
+}
+
 .carousel li {
   @media screen and (min-width: 768px) {
     min-height: auto;
