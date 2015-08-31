@@ -6,6 +6,16 @@
   height: 100vh;
   position: relative; 
   width: 100%;
+
+  a {
+    text-decoration: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    animation: none;
+    height: 100%;
+    width: 25%;
+  }
   
   &__logo {
     bottom: 0;
@@ -15,5 +25,31 @@
     right: 0;
     top: 0;
     width: 60%;
+
+    @media screen and (min-width: 768px) {
+      bottom: 2vh;
+      left: 2vh;
+      right: auto;
+      top: auto;
+      height: 5vh;
+      width: auto;
+    }
+  }
+
+  nav {
+    display: none;
+
+    @media screen and (min-width: 768px) {
+      display: inline-block;
+      height: 80vh;
+      margin-top: 10vh;
+      width: 100%;
+      overflow-x: hidden;
+    }
+
+    li {
+      margin-bottom: 20px;
+      border-left: 8px solid #000;
+    }
   }
 }
