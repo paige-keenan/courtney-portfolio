@@ -1,3 +1,3 @@
 # courtneyPortfolio
 
-#ReadMe Coming Soon
+#Checkout develop
