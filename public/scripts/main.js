@@ -1,63 +1,98 @@
-// Don't carousel on tablet+
-if($(window).width() > 768) {
+$(function() {
+    function init() {
+        preventCarousel();
+        moveCarousel();
+        changeCursor();
+        showModal();
+        hideModal();
+    }
 
-	$('.carousel ul').each(function() {
-		var groups = $(this).children('.group').length;
-		$(this).width(100 * groups + '%');
-		var width = (100 / groups + '%'); 
-		$(this).children('.group').width(width);
-	});
-}
+    function preventCarousel() {
+        // Don't carousel on tablet+
+        if($(window).width() > 768) {
 
-var groupWidth = $('.group').width();
-var halfWay = groupWidth / 2;
+            $('.carousel ul').each(function() {
+                var groups = $(this).children('.group').length;
+                $(this).width(100 * groups + '%');
+                var width = (100 / groups + '%'); 
+                $(this).children('.group').width(width);
+            });
+        }    
+    }    
 
-// Move Carousel based on position
-$('.group').on('click', function(event){
-	var distanceFromLeft = event.clientX - $(this).offset().left; 	
-	var length =  $(this).parent('.ul').length
-	var groupNumber = $(this).parent().children('.group').length;
-	var percentChange = 100 / groupNumber;
-	var groupIndex = $(this).attr('data-group');
-    if (distanceFromLeft >= halfWay) {
-    	var dataPosition = $(this).parent('ul').attr('data-position', -1 * (percentChange * groupIndex));
-    	var dataCurrent = $(this).attr('data-current', - (percentChange * groupIndex));
-    	
+    function moveCarousel() {
+        // Move Carousel based on position
+        $('.group').on('click', function(event){
+            var distanceFromLeft = event.clientX - $(this).offset().left;   
+            var length =  $(this).parent('.ul').length
+            var groupNumber = $(this).parent().children('.group').length;
+            var percentChange = 100 / groupNumber;
+            var groupIndex = $(this).attr('data-group');
+            if (distanceFromLeft >= halfWay) {
+                var dataPosition = $(this).parent('ul').attr('data-position', -1 * (percentChange * groupIndex));
+                var dataCurrent = $(this).attr('data-current', - (percentChange * groupIndex));
+                
 
-	 	if($(this).hasClass('last')) {
-			event.preventDefault();
-		} else {
-			$(this).parent('ul').css({'transform': 'translateX(-' + percentChange * groupIndex +'%)'});
-		}
-    } else {
-    	var position = parseInt($(this).parent('ul').attr('data-position'));
-    	var moveBack = parseInt($(this).parent().find('.group').attr('data-current'));
-    	moveBack = moveBack * (groupIndex);
-    	console.log($(this).prev().attr('data-current'));
-    	
-    	var moveHere = $(this).prev().prev().attr('data-current');
-    	parseInt(moveHere);
+                if($(this).hasClass('last')) {
+                    event.preventDefault();
+                } else {
+                    $(this).parent('ul').css({'transform': 'translateX(-' + percentChange * groupIndex +'%)'});
+                }
+            } else {
+                var position = parseInt($(this).parent('ul').attr('data-position'));
+                var moveBack = parseInt($(this).parent().find('.group').attr('data-current'));
+                moveBack = moveBack * (groupIndex);
+                console.log($(this).prev().attr('data-current'));
+                
+                var moveHere = $(this).prev().prev().attr('data-current');
+                parseInt(moveHere);
 
-    	if($(this).index() === 1 ) {
-    		moveHere = 0;
-    	}
- 
+                if($(this).index() === 1 ) {
+                    moveHere = 0;
+                }
+         
 
 
-    	$(this).parent('ul').css({'transform': 'translateX(' + moveHere +'%)'});
-  
+                $(this).parent('ul').css({'transform': 'translateX(' + moveHere +'%)'});
+            }
+        });
+    }  
+
+    function changeCursor() {
+        // Change default cursor
+        $('.group').mousemove(function(event) {
+            var distanceFromLeft = event.clientX - $(this).offset().left;       
+            if (distanceFromLeft >= halfWay) {
+                $('.group').css( 'cursor', 'url(../../images/cursor-right.png), auto' );
+            } else {
+                $('.group').css( 'cursor', 'url(../images/cursor-left.png), auto' );
+            }
+        });    
+    }   
+
+    function showModal() {
+        $('.modalify').on('click', function(event){
+            var $imgSrc = $(this).attr('src');
+            $('.modalized').attr('src', $imgSrc);
+            $('.modal').addClass('show');
+        });
+    } 
+
+    function hideModal() {
+        $('.modal__container__exit').on('click', function(event) {
+            if($('.modal').hasClass('show')) {
+                $('.modal').removeClass('show');
+            };
+        });
+
+        $('.modalized').on('click', function(event) {
+            event.stopPropagation();
+        });
     }
 
 
-});
+    init();
+    var groupWidth = $('.group').width();
+    var halfWay = groupWidth / 2;
 
-// Change default cursor
-$('.group').mousemove(function(event) {
-	var distanceFromLeft = event.clientX - $(this).offset().left;    	
-    if (distanceFromLeft >= halfWay) {
-    	$('.group').css( 'cursor', 'url(../../images/cursor-right.png), auto' );
-    } else {
-    	$('.group').css( 'cursor', 'url(../images/cursor-left.png), auto' );
-    }
 });
-
