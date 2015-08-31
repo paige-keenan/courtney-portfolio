@@ -2,8 +2,8 @@
 
 // Variables
 $project-one-main:    #37f799;
-$project-two-main:    #f7ef3b;
-$project-three-main:  #3BF7EC;
+$project-two-main:    #eae1ff; // Sok
+$project-three-main:  #8bc9ff; // Parallel
 $project-four-main:   #8A83D3;
 $project-five-main:   #E96769;
 $project-six-main:    #5E81ED;
@@ -205,11 +205,6 @@ $project-ten-main:    #00E3B5;
 
     &__three {
       background: url('../../images/parallel/parallel02.jpg') no-repeat center;
-      background-size: cover;
-    }
-
-    &__four {
-      background: url('../../images/parallel/parallel03.jpg') no-repeat center;
       background-size: cover;
     }    
   }       	
