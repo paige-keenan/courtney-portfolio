@@ -1,21 +1,47 @@
 // main.scss
 
 // Variables
-$project-one-main: #37f799;
-$project-two-main: #f7ef3b;
-$project-three-main: #3BF7EC;
-$project-four-main: #8A83D3;
-$project-five-main: #E96769;
-$project-six-main: #5E81ED;
-$project-seven-main: #ED8B5E;
-$project-eight-main: #00A5B6;
-$project-nine-main: #EAB5EF;
-$project-ten-main: #00E3B5;
+$project-one-main:    #37f799;
+$project-two-main:    #f7ef3b;
+$project-three-main:  #3BF7EC;
+$project-four-main:   #8A83D3;
+$project-five-main:   #E96769;
+$project-six-main:    #5E81ED;
+$project-seven-main:  #ED8B5E;
+$project-eight-main:  #00A5B6;
+$project-nine-main:   #EAB5EF;
+$project-ten-main:    #00E3B5;
 
 .main {
-  padding: 20px 0;
+  // padding: 20px 0;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }  
+
+  @media screen and (min-width: 768px) {
+    height: 100%;
+    min-height: 600px;
+    overflow: scroll;
+    position: absolute;
+    left: 25%;
+    top: 0;
+    width: 75%;
+    max-width: 1000px;
+  }
+
+  h2,
+  h3 {
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+  }
 
   &__project {
+    @media screen and (min-width: 768px) {
+      height: 100vh;
+      padding: 10vh 0;
+    }
 
     &__content-container {
       padding: 15px;
@@ -29,7 +55,17 @@ $project-ten-main: #00E3B5;
         }
       }
     }
+
+    img {
+      bottom: 0;
+      left: 0;
+      margin: 0 auto;
+      position: absolute;
+      right: 0;
+      width: 80%;
+    }
   }
+
 
 // PROJECT ONE
   &__project-one {
@@ -43,7 +79,10 @@ $project-ten-main: #00E3B5;
       background-size: cover;
     }
 
-    &__two {
+    &__two,
+    &__four,
+    &__five,
+    &__six {
       background: $project-one-main;
     }
 
@@ -51,6 +90,43 @@ $project-ten-main: #00E3B5;
       background: url('../../images/mall/mall02.jpg') no-repeat center;
       background-size: cover;
     }
+
+    &__five {
+      display: table-cell;
+      vertical-align: middle;
+    }
+
+    &__six img {
+      bottom: -175px;
+
+      @media screen and (min-width: 768px) {
+        width: 60%;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        max-width: 250px;
+      }
+    }
+
+    &__seven {
+      background: url('../../images/mall/mall04.jpg') no-repeat center;
+      background-size: cover;
+    }
+
+    &__eight {
+      background: url('../../images/mall/mall05.jpg') no-repeat center;
+      background-size: cover;
+    }
+
+    &__nine {
+      background: url('../../images/mall/mall06.jpg') no-repeat center;
+      background-size: cover;
+    }
+
+    &__ten {
+      background: url('../../images/mall/mall07.jpg') no-repeat center;
+      background-size: cover;
+    }                
   }	
 
 // PROJECT TWO
@@ -73,6 +149,42 @@ $project-ten-main: #00E3B5;
       background: url('../../images/sok/sok02.jpg') no-repeat center;
       background-size: cover;
     }
+
+    &__four {
+      background: url('../../images/sok/sok03.jpg') no-repeat center;
+      background-size: cover;
+    } 
+
+    &__five {
+      background: url('../../images/sok/sok04.jpg') no-repeat center;
+      background-size: cover;
+    } 
+
+    &__six {
+      background: url('../../images/sok/sok05.jpg') no-repeat center;
+      background-size: cover;
+    } 
+
+    &__seven {
+      background: url('../../images/sok/sok06.jpg') no-repeat center;
+      background-size: cover;
+    }   
+
+    &__eight {
+      background: url('../../images/sok/sok07.gif') no-repeat center;
+      background-size: cover;
+    }   
+
+    &__nine {
+      background: url('../../images/sok/sok08.gif') no-repeat center;
+      background-size: cover;
+    }   
+
+    &__ten {
+      background: url('../../images/sok/sok09.gif') no-repeat center;
+      background-size: cover;
+    }       
+
   } 
 
 // PROJECT THREE
@@ -315,7 +427,7 @@ $project-ten-main: #00E3B5;
   }          
 
   .carousel {
-    overflow: hidden;
+    overflow-x: hidden;
     width: 100%;
     -webkit-backface-visibility: hidden;
     -webkit-transform: translate3d(0,0,0) scale3d(1,1,1);
@@ -332,10 +444,10 @@ $project-ten-main: #00E3B5;
       overflow: hidden;
       -webkit-backface-visibility: hidden;
       -webkit-transform-style: preserve-3d;  
-
       -webkit-box-shadow: 0 0 20px rgba(0,0,0,.2);
       box-shadow: 0 0 20px rgba(0,0,0,.2);
       position: relative;
+      // margin-bottom: 150px;
       
       &.animate {
         -webkit-transition: all .3s;
@@ -347,10 +459,41 @@ $project-ten-main: #00E3B5;
 
     li {
       float: left;
+      height: 350px;
       overflow: hidden;
       -webkit-transform-style: preserve-3d;
-      -webkit-transform: translate3d(0,0,0);    
+      -webkit-transform: translate3d(0,0,0);         
     }
+
+// CLASSES TO CONTROL POSITIONING
+    @media screen and (min-width: 768px) {
+      .half-width {
+        width: 50%;
+      }
+
+      .full-width {
+        width: 100%;
+      }
+
+      .half-height {
+        height: 50%;
+      }
+
+      .full-height {
+        height: 100%;
+      }
+
+      .absolute-bottom {
+        position: absolute;
+        bottom: 0;
+      }
+
+      .group {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+      }
+    }     
   } 
 }
 
@@ -362,4 +505,8 @@ html, body, .carousel, .carousel ul, .carousel li {
   position: relative;
 }
 
-
+.carousel li {
+  @media screen and (min-width: 768px) {
+    min-height: auto;
+  }
+}
