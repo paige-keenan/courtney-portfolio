@@ -1,9 +1,9 @@
 // application.scss
 
 // Variables
-$headerline01: 'Lobster', sans-serif, serif;
-$headerline02: 'Josefin Sans', sans-serif, serif;
-$body-font: 'Times New Roman';
+$headerline01: 'Apercu Regular', sans-serif, serif;
+$headerline02: 'Apercu Regular', sans-serif, serif;
+$body-font: 'Apercu Mono';
 $link-color: #000;
 
 // Imports
@@ -11,6 +11,17 @@ $link-color: #000;
 @import 'header';
 @import 'main';
 @import 'modal';
+
+// Fonts
+@font-face {
+  font-family: 'Apercu Mono';
+  src: url('../../fonts/apercu_mono.otf');
+}
+
+@font-face {
+  font-family: 'Apercu Regular';
+  src: url('../../fonts/apercuRegular.otf');
+}
 
 // Global
 * {
@@ -38,10 +49,10 @@ h1 {
   &::before {
     background: #000;
     content: '';
-    height: 1px;
+    height: 2px;
     left: 50%;
     position: absolute;
-    top: -10px;
+    top: -30px;
     transform: translate(-50%, 0);
     width: 80px;
   }
@@ -49,17 +60,17 @@ h1 {
   &::after {
     background: #000;
     content: '';
-    height: 1px;
+    height: 2px;
     left: 50%;
     position: absolute;
-    bottom: -10px;
+    bottom: -30px;
     transform: translate(-50%, 0);
     width: 80px;
   }  
 }
 
 h2 {
-  font-family: $headerline01;
+  font-family: $body-font;
   font-size: 50px;
   letter-spacing: 3px;
   padding: 0 0 5px 10px;
@@ -71,7 +82,7 @@ h2 {
 }
 
 h3 {
-  font-family: $headerline02;
+  font-family: $body-font;
   font-size: 30px;
   letter-spacing: 1px;
   padding: 0 0 0 10px;
@@ -90,6 +101,7 @@ h4 {
   font-size: 30px;
   letter-spacing: 1px;
   padding: 8px 8px 2px;
+  text-transform: uppercase;
 }
 
 h5 {
@@ -99,8 +111,8 @@ h5 {
   font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 2px;
-  padding: 5px 5px 0;
-  margin: 5px 5px 0 0;
+  padding: 5px;
+  margin: 5px 10px 0 0;
 }
 
 p {
@@ -109,6 +121,7 @@ p {
   padding: 15px 0 0;
   line-height: 22px;
   display: inline-block;
+  margin: 20px;
 }
 
 a {

@@ -28,6 +28,7 @@ $(function() {
             var groupNumber = $(this).parent().children('.group').length;
             var percentChange = 100 / groupNumber;
             var groupIndex = $(this).attr('data-group');
+
             if (distanceFromLeft >= halfWay) {
                 var dataPosition = $(this).parent('ul').attr('data-position', -1 * (percentChange * groupIndex));
                 var dataCurrent = $(this).attr('data-current', - (percentChange * groupIndex));
@@ -37,7 +38,9 @@ $(function() {
                 } else {
                     $(this).parent('ul').css({'transform': 'translateX(-' + percentChange * groupIndex +'%)'});
                 }
-            } else {
+            } 
+
+            else {
                 var position = parseInt($(this).parent('ul').attr('data-position'));
                 var moveBack = parseInt($(this).parent().find('.group').attr('data-current'));
                 moveBack = moveBack * (groupIndex);
@@ -50,7 +53,7 @@ $(function() {
                 }
 
                 $(this).parent('ul').css({'transform': 'translateX(' + moveHere +'%)'});
-            }
+            }           
         });
     }  
 
@@ -71,18 +74,13 @@ $(function() {
             var $imgSrc = $(this).attr('src');
             $('.modalized').attr('src', $imgSrc);
             $('.modal').addClass('show');
+            event.preventDefault;
         });
     } 
 
     function hideModal() {
-        $('.modal__container__exit').on('click', function(event) {
-            if($('.modal').hasClass('show')) {
-                $('.modal').removeClass('show');
-            };
-        });
-
-        $('.modalized').on('click', function(event) {
-            event.stopPropagation();
+        $('.modal').on('click', function(event) {
+            $('.modal').removeClass('show');
         });
     }
 
