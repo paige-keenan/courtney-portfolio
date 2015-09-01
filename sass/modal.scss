@@ -12,7 +12,6 @@
 
 	&__container {
 		max-width: 60%;
-	
 		height: 90vh;
 		position: absolute;
 		top: 5vh;
@@ -38,4 +37,9 @@
 
 .modalify {
 	cursor: pointer;
+}
+
+.white .modal__container {
+	background: #fff;
+
 }
