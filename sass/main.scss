@@ -10,7 +10,7 @@ $project-six-main:    #b3ffda; // Mall
 $project-seven-main:  #ffc9a0; // Whataburger
 $project-eight-main:  #ffeadc; // Greeting Cards
 $project-nine-main:   #99dbff; // Marta
-$project-ten-main:    #c2ff61; // Alice
+$project-ten-main:    #c2ff61; // Motion
 
 .main {
 
@@ -98,29 +98,6 @@ $project-ten-main:    #c2ff61; // Alice
 
 
 // PROJECT ONE
-  &__project-two {
-    h4,
-    h5 {
-      color: $project-one-main;
-    }
-
-    &__one {
-      background: url('../../images/mall/mall01.jpg') no-repeat center;
-      background-size: cover;
-    }
-
-    &__two {
-      background: $project-one-main;
-    }
-
-    .group[data-group='3'],
-    .group[data-group='4'] {
-      background: url('../../images/mall/mall-background.jpg') no-repeat center;
-      background-size: cover;
-    }
-  }	
-
-// PROJECT TWO
   &__project-one {
     h4,
     h5 {
@@ -163,11 +140,13 @@ $project-ten-main:    #c2ff61; // Alice
     }         
   } 
 
-// PROJECT THREE
-  &__project-three {
+
+
+// PROJECT TWO
+  &__project-two {
     h4,
     h5 {
-      color: $project-three-main;
+      color: $project-two-main;
     }
 
     &__one {
@@ -176,11 +155,51 @@ $project-ten-main:    #c2ff61; // Alice
     }
 
     &__two {
-      background: $project-three-main;
+      background: $project-two-main;
     }   
-  }       	
+  } 
+
+
+
+// PROJECT THREE
+  &__project-three {
+    h4,
+    h5 {
+      color: $project-three-main;
+    }
+
+    &__one {
+      background: url('../../images/songsOfFreedom/songsOfFreedom01.jpg') no-repeat center;
+      background-size: cover;
+    }    
+
+    &__two {
+      background: $project-three-main;
+    }    
+  }   
+
+
 
 // PROJECT FOUR
+  &__project-four {
+    h4,
+    h5 {
+      color: $project-four-main;
+    }
+
+    &__one {
+      background: url('../../images/voodudes/voodudes01.jpg') no-repeat center;
+      background-size: cover;
+    }
+
+    &__two {
+      background: $project-four-main;
+    }    
+  }
+
+
+
+// PROJECT FIVE
   &__project-five {
     h4,
     h5 {
@@ -207,7 +226,33 @@ $project-ten-main:    #c2ff61; // Alice
     }        
   } 
 
-// PROJECT FIVE
+
+// PROJECT SIX
+  &__project-six {
+    h4,
+    h5 {
+      color: $project-six-main;
+    }
+
+    &__one {
+      background: url('../../images/mall/mall01.jpg') no-repeat center;
+      background-size: cover;
+    }
+
+    &__two {
+      background: $project-six-main;
+    }
+
+    .group[data-group='3'],
+    .group[data-group='4'] {
+      background: url('../../images/mall/mall-background.jpg') no-repeat center;
+      background-size: cover;
+    }
+  } 
+
+  
+
+// PROJECT SEVEN
   &__project-seven {
     h4,
     h5 {
@@ -234,25 +279,9 @@ $project-ten-main:    #c2ff61; // Alice
     }        
   }    
 
-// PROJECT SIX
-  &__project-six {
-    h4,
-    h5 {
-      color: $project-six-main;
-    }
 
-    &__one {
-      background: url('../../images/tounges/tounges01.jpg') no-repeat center;
-      background-size: cover;
-    }
 
-    &__two,
-    &__three {
-      background: $project-six-main;
-    }  
-  } 
-
-// PROJECT SEVEN
+// PROJECT EIGHT
   &__project-eight {
     h4,
     h5 {
@@ -299,33 +328,13 @@ $project-ten-main:    #c2ff61; // Alice
     }
 
     &__one {
-      background: url('../../images/cosmic/cosmic01.jpg') no-repeat center;
+      background: url('../../images/marta/marta01.jpg') no-repeat center;
       background-size: cover;
     }
 
     &__two {
       background: $project-nine-main;
-    }  
-
-    &__three {
-      background: url('../../images/cosmic/cosmic02.jpg') no-repeat center;
-      background-size: cover;
-    }
-
-    &__four {
-      background: url('../../images/cosmic/cosmic03.jpg') no-repeat center;
-      background-size: cover;
-    }
-
-    &__five {
-      background: url('../../images/cosmic/cosmic04.jpg') no-repeat center;
-      background-size: cover;
-    }  
-
-    &__six {
-      background: url('../../images/cosmic/cosmic05.jpg') no-repeat center;
-      background-size: cover;
-    }                
+    }    
   }  
 
 // PROJECT TEN
@@ -340,8 +349,7 @@ $project-ten-main:    #c2ff61; // Alice
       background-size: cover;
     }
 
-    &__two,
-    &__three {
+    &__two{
       background: $project-ten-main;
     }                
   }          
