@@ -1,19 +1,18 @@
 // main.scss
 
 // Variables
-$project-one-main:    #b3ffda; // Mall
-$project-two-main:    #eae1ff; // Sok
-$project-three-main:  #8bc9ff; // Parallel
-$project-four-main:   #fff8b0; // Ben Howard
-$project-five-main:   #ffc9a0; // Whataburger
-$project-six-main:    #5E81ED;
-$project-seven-main:  #ffeadc; // Cards
-$project-eight-main:  #00A5B6;
-$project-nine-main:   #EAB5EF;
-$project-ten-main:    #00E3B5;
+$project-one-main:    #eae1ff; // SOK
+$project-two-main:    #8bc9ff; // Parallel
+$project-three-main:  #f9ff93; // Songs of Freedom
+$project-four-main:   #bdf7ef; // Voodudes
+$project-five-main:   #fff8b0; // Ben Howard
+$project-six-main:    #b3ffda; // Mall
+$project-seven-main:  #ffc9a0; // Whataburger
+$project-eight-main:  #ffeadc; // Greeting Cards
+$project-nine-main:   #99dbff; // Marta
+$project-ten-main:    #c2ff61; // Alice
 
 .main {
-  // padding: 20px 0;
 
   &::-webkit-scrollbar {
     display: none;
@@ -99,7 +98,7 @@ $project-ten-main:    #00E3B5;
 
 
 // PROJECT ONE
-  &__project-one {
+  &__project-two {
     h4,
     h5 {
       color: $project-one-main;
@@ -122,10 +121,10 @@ $project-ten-main:    #00E3B5;
   }	
 
 // PROJECT TWO
-  &__project-two {
+  &__project-one {
     h4,
     h5 {
-      color: $project-two-main;
+      color: $project-one-main;
     }
 
     &__one {
@@ -134,7 +133,7 @@ $project-ten-main:    #00E3B5;
     }
 
     &__two {
-      background: $project-two-main;
+      background: $project-one-main;
     }
 
 
@@ -182,10 +181,10 @@ $project-ten-main:    #00E3B5;
   }       	
 
 // PROJECT FOUR
-  &__project-four {
+  &__project-five {
     h4,
     h5 {
-      color: $project-four-main;
+      color: $project-five-main;
     }
 
     &__one {
@@ -194,7 +193,7 @@ $project-ten-main:    #00E3B5;
     }
 
     &__two {
-      background: $project-four-main;
+      background: $project-five-main;
     }
 
     &__five {
@@ -209,10 +208,10 @@ $project-ten-main:    #00E3B5;
   } 
 
 // PROJECT FIVE
-  &__project-five {
+  &__project-seven {
     h4,
     h5 {
-      color: $project-five-main;
+      color: $project-seven-main;
     }
 
     &__one {
@@ -221,7 +220,7 @@ $project-ten-main:    #00E3B5;
     }
 
     &__two {
-      background: $project-five-main;
+      background: $project-seven-main;
     }
 
     &__four {
@@ -254,10 +253,10 @@ $project-ten-main:    #00E3B5;
   } 
 
 // PROJECT SEVEN
-  &__project-seven {
+  &__project-eight {
     h4,
     h5 {
-      color: $project-seven-main;
+      color: $project-eight-main;
     }
 
     &__one {
@@ -266,7 +265,7 @@ $project-ten-main:    #00E3B5;
     }
 
     &__two {
-      background: $project-seven-main;
+      background: $project-eight-main;
     }  
 
     &__three {
@@ -290,42 +289,7 @@ $project-ten-main:    #00E3B5;
     }                
   } 
 
-// PROJECT EIGHT
-  &__project-eight {
-    h4,
-    h5 {
-      color: $project-eight-main;
-    }
 
-    &__one {
-      background: url('../../images/brain-food/brainfood01.jpg') no-repeat center;
-      background-size: cover;
-    }
-
-    &__two {
-      background: $project-eight-main;
-    }  
-
-    &__three {
-      background: url('../../images/brain-food/brainfood02.jpg') no-repeat center;
-      background-size: cover;
-    }
-
-    &__four {
-      background: url('../../images/brain-food/brainfood03.jpg') no-repeat center;
-      background-size: cover;
-    }
-
-    &__five {
-      background: url('../../images/brain-food/brainfood04.jpg') no-repeat center;
-      background-size: cover;
-    }  
-
-    &__six {
-      background: url('../../images/brain-food/brainfood05.jpg') no-repeat center;
-      background-size: cover;
-    }                
-  } 
 
 // PROJECT NINE
   &__project-nine {
