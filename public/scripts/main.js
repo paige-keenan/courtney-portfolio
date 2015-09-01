@@ -62,9 +62,9 @@ $(function() {
         $('.group').mousemove(function(event) {
             var distanceFromLeft = event.clientX - $(this).offset().left;       
             if (distanceFromLeft >= halfWay) {
-                $('.group').css( 'cursor', 'url(../../images/cursor-right.png), auto' );
+                $('.group').css( 'cursor', 'url(../../images/cursor-rightarrow.svg), auto' );
             } else {
-                $('.group').css( 'cursor', 'url(../images/cursor-left.png), auto' );
+                $('.group').css( 'cursor', 'url(../images/cursor-leftarrow.svg), auto' );
             }
         });    
     }   
