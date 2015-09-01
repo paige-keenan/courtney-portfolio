@@ -130,16 +130,6 @@
     max-width: 250px; } }
 .main img.large-img {
   max-width: 600px; }
-.main__project-two h4, .main__project-two h5 {
-  color: #eae1ff; }
-.main__project-two__one {
-  background: url('../../images/mall/mall01.jpg') no-repeat center;
-  background-size: cover; }
-.main__project-two__two {
-  background: #eae1ff; }
-.main__project-two .group[data-group='3'], .main__project-two .group[data-group='4'] {
-  background: url('../../images/mall/mall-background.jpg') no-repeat center;
-  background-size: cover; }
 .main__project-one h4, .main__project-one h5 {
   color: #eae1ff; }
 .main__project-one__one {
@@ -162,13 +152,27 @@
 .main__project-one__eight {
   background: url('../../images/sok/sok07.gif') no-repeat center;
   background-size: cover; }
+.main__project-two h4, .main__project-two h5 {
+  color: #8bc9ff; }
+.main__project-two__one {
+  background: url('../../images/parallel/parallel01.jpg') no-repeat center;
+  background-size: cover; }
+.main__project-two__two {
+  background: #8bc9ff; }
 .main__project-three h4, .main__project-three h5 {
   color: #f9ff93; }
 .main__project-three__one {
-  background: url('../../images/parallel/parallel01.jpg') no-repeat center;
+  background: url('../../images/songsOfFreedom/songsOfFreedom01.jpg') no-repeat center;
   background-size: cover; }
 .main__project-three__two {
   background: #f9ff93; }
+.main__project-four h4, .main__project-four h5 {
+  color: #bdf7ef; }
+.main__project-four__one {
+  background: url('../../images/voodudes/voodudes01.jpg') no-repeat center;
+  background-size: cover; }
+.main__project-four__two {
+  background: #bdf7ef; }
 .main__project-five h4, .main__project-five h5 {
   color: #fff8b0; }
 .main__project-five__one {
@@ -181,6 +185,16 @@
   background-size: cover; }
 .main__project-five__seven {
   background: url('../../images/ben-howard/benHoward05.jpg') no-repeat center;
+  background-size: cover; }
+.main__project-six h4, .main__project-six h5 {
+  color: #b3ffda; }
+.main__project-six__one {
+  background: url('../../images/mall/mall01.jpg') no-repeat center;
+  background-size: cover; }
+.main__project-six__two {
+  background: #b3ffda; }
+.main__project-six .group[data-group='3'], .main__project-six .group[data-group='4'] {
+  background: url('../../images/mall/mall-background.jpg') no-repeat center;
   background-size: cover; }
 .main__project-seven h4, .main__project-seven h5 {
   color: #ffc9a0; }
@@ -195,13 +209,6 @@
 .main__project-seven__seven {
   background: url('../../images/whataburger/whataburger07.jpg') no-repeat center;
   background-size: cover; }
-.main__project-six h4, .main__project-six h5 {
-  color: #b3ffda; }
-.main__project-six__one {
-  background: url('../../images/tounges/tounges01.jpg') no-repeat center;
-  background-size: cover; }
-.main__project-six__two, .main__project-six__three {
-  background: #b3ffda; }
 .main__project-eight h4, .main__project-eight h5 {
   color: #ffeadc; }
 .main__project-eight__one {
@@ -224,28 +231,16 @@
 .main__project-nine h4, .main__project-nine h5 {
   color: #99dbff; }
 .main__project-nine__one {
-  background: url('../../images/cosmic/cosmic01.jpg') no-repeat center;
+  background: url('../../images/marta/marta01.jpg') no-repeat center;
   background-size: cover; }
 .main__project-nine__two {
   background: #99dbff; }
-.main__project-nine__three {
-  background: url('../../images/cosmic/cosmic02.jpg') no-repeat center;
-  background-size: cover; }
-.main__project-nine__four {
-  background: url('../../images/cosmic/cosmic03.jpg') no-repeat center;
-  background-size: cover; }
-.main__project-nine__five {
-  background: url('../../images/cosmic/cosmic04.jpg') no-repeat center;
-  background-size: cover; }
-.main__project-nine__six {
-  background: url('../../images/cosmic/cosmic05.jpg') no-repeat center;
-  background-size: cover; }
 .main__project-ten h4, .main__project-ten h5 {
   color: #c2ff61; }
 .main__project-ten__one {
   background: url('../../images/alice/alice01.jpg') no-repeat center;
   background-size: cover; }
-.main__project-ten__two, .main__project-ten__three {
+.main__project-ten__two {
   background: #c2ff61; }
 .main .carousel {
   overflow-x: hidden;
@@ -343,7 +338,7 @@ html {
 .modalify {
   cursor: pointer; }
 
-.white .modal__container {
+.modalify.white .modal__container {
   background: #fff; }
 
 @font-face {
