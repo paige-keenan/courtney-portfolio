@@ -61,7 +61,7 @@ $(function() {
         // Change default cursor
         $('.group').mousemove(function(event) {
             var distanceFromLeft = event.clientX - $(this).offset().left;       
-            if (distanceFromLeft >= halfWay) {
+            if (distanceFromLeft >= (halfWay - 30)) {
                 $('.group').css( 'cursor', 'url(../../images/cursor-rightarrow.svg), auto' );
             } else {
                 $('.group').css( 'cursor', 'url(../images/cursor-leftarrow.svg), auto' );
