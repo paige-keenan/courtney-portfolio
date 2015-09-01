@@ -34,12 +34,8 @@ main.main
           li.pane6.main__project-two__six.full-height.full-width
         .group(data-group='5')    
           li.pane7.main__project-two__seven.full-height.full-width 
-        .group(data-group='6')  
+        .group.last(data-group='6')  
           li.pane8.main__project-two__eight.full-height.full-width 
-        .group(data-group='7')  
-          li.pane9.main__project-two__nine.full-height.full-width 
-        .group.last(data-group='8')  
-          li.pane10.main__project-two__ten.full-height.full-width 
 
   .main__project.main__project-three#projectThree
     h2 03
@@ -65,8 +61,55 @@ main.main
             h1 Spring 2015 
               span Vision Matters
           li.pane4.main__project-three__four.full-height.half-width
-            img.modalify(src='../images/parallel/parallel04.png', alt='Vision Matters')  
-
+            img.large-img.modalify(src='../images/parallel/parallel02.png', alt='Vision Matters')  
+        .group(data-group='3')    
+          li.pane5.main__project-three__five.full-height.full-width  
+            img.large-img.modalify(src='../images/parallel/parallel03.png', alt='Vision Matters') 
+        .group(data-group='4')    
+          li.pane5.main__project-three__six.full-height.full-width  
+            img.large-img.modalify(src='../images/parallel/parallel04.png', alt='Vision Matters') 
+        .group(data-group='5')    
+          li.pane5.main__project-three__seven.full-height.full-width  
+            img.large-img.modalify(src='../images/parallel/parallel05.png', alt='Vision Matters')                          
+        .group(data-group='6')  
+          li.pane3.main__project-three__three.full-height.half-width
+            h1 Summer 2015 
+              span Sex Matters
+          li.pane4.main__project-three__four.full-height.half-width
+            img.large-img.modalify(src='../images/parallel/parallel15.png', alt='Sex Matters')              
+        .group(data-group='7')    
+          li.pane5.main__project-three__seven.full-height.full-width  
+            img.large-img.modalify(src='../images/parallel/parallel06.png', alt='Sex Matters')
+        .group(data-group='8')    
+          li.pane5.main__project-three__seven.full-height.full-width  
+            img.large-img.modalify(src='../images/parallel/parallel07.png', alt='Sex Matters')              
+        .group(data-group='9')    
+          li.pane5.main__project-three__seven.full-height.full-width  
+            img.large-img.modalify(src='../images/parallel/parallel08.png', alt='Sex Matters')            
+        .group(data-group='10')    
+          li.pane5.main__project-three__seven.full-height.full-width  
+            img.large-img.modalify(src='../images/parallel/parallel09.png', alt='Sex Matters')            
+        .group(data-group='11')    
+          li.pane5.main__project-three__seven.full-height.full-width  
+            img.large-img.modalify(src='../images/parallel/parallel10.png', alt='Sex Matters')            
+        .group(data-group='12')    
+          li.pane5.main__project-three__seven.full-height.full-width  
+            img.large-img.modalify(src='../images/parallel/parallel11.png', alt='Sex Matters')            
+        .group(data-group='13')  
+          li.pane3.main__project-three__three.full-height.half-width
+            h1 Fall 2015 
+              span Destruction Matters
+          li.pane4.main__project-three__four.full-height.half-width
+            img.large-img.modalify(src='../images/parallel/parallel16.png', alt='Destruction Matters')
+        .group(data-group='14')    
+          li.pane5.main__project-three__seven.full-height.full-width  
+            img.large-img.modalify(src='../images/parallel/parallel12.png', alt='Destruction Matters')    
+        .group(data-group='15')    
+          li.pane5.main__project-three__seven.full-height.full-width  
+            img.large-img.modalify(src='../images/parallel/parallel13.png', alt='Destruction Matters')                                         
+        .group.last(data-group='16')    
+          li.pane5.main__project-three__seven.full-height.full-width  
+            img.large-img.modalify(src='../images/parallel/parallel14.png', alt='Destruction Matters')                                          
 
   .main__project.main__project-one#projectOne
     h2 01
@@ -100,7 +143,7 @@ main.main
             img.modalify(src='../images/mall/mall05.png', alt='mall app')
           li.pane6.main__project-one__eight.full-height.half-width
             img.modalify(src='../images/mall/mall06.png', alt='mall app')
-        .group(data-group='5')    
+        .group.last(data-group='5')    
           li.pane6.main__project-one__nine.full-height.full-width
             img.large-img.modalify(src='../images/mall/mall07.png')
 
@@ -116,12 +159,19 @@ main.main
               h4 Ben Howard Poster
               p I Forget Where We Were Tour 2015
               .main__project__content-container__buttons
-                h5 design
+                h5 print
           li.pane3.main__project-four__three  
         .group(data-group='2')  
           li.pane3.main__project-four__four.full-width.full-height  
+            img.large-img.modalify(src='../../images/ben-howard/benHoward02.png')
         .group.last(data-group='3')  
-          li.pane3.main__project-four__five.full-width.full-height    
+          li.pane4.main__project-four__five.full-width.full-height    
+        .group(data-group='4')  
+          li.pane5.main__project-four__six.full-width.full-height  
+            img.large-img.modalify(src='../../images/ben-howard/benHoward04.png')
+        .group.last(data-group='5')  
+          li.pane6.main__project-four__seven.full-width.full-height    
+
 
   .main__project.main__project-five#projectFive
     h2 05
@@ -133,25 +183,32 @@ main.main
           li.pane2.main__project-five__two.half-width.full-height
             .main__project__content-container
               h4 Whataburger Campaign
-              p Whataburger is opening its doors in cities unknown, but words can't describe how good Whataburger tastes. So let's prepare only the minds and 4-of-5 primary senses (excluding taste) for Whataburger's arrival, allowing Whata-virgins to focus on familiarizing their taste buds once the doors open.
+              p Prepare Your Senses
+              p Whataburger is opening its doors in cities unknown, but words can't describe how good Whataburger tastes. So let's prepare only the minds and 4­of­5 primary senses (excluding taste) for Whataburger's arrival, allowing Whata­virgins to focus on familiarizing their taste buds once the doors open.
               .main__project__content-container__buttons
-                h5 design
+                h5 Ad Campaign
+                h5 production
                 h5 art direction
               .main__project__content-container__team-member
                 p Copywriter: 
-                a(href='http://philfattore.com' target='_blank') Phil Fattore
+                a(href='http://philfattore.com' target='_blank') Phil Fattore,
               .main__project__content-container__team-member  
-                p Copywriter: 
                 a(href='http://haydenthegriffin.com' target='_blank') Hayden Griffin          
         .group(data-group='2')        
           li.pane3.main__project-five__three.full-width.full-height
             | <iframe src="https://player.vimeo.com/video/114508804?color=ffffff" width="90%" height="70%" style="margin-top:10%; margin-left: 5%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-        .group(data-group='3')    
-          li.pane3.main__project-five__four.full-width.full-height  
-        .group(data-group='4')  
-          li.pane3.main__project-five__five.full-width.full-height  
+        .group(data-group='3')     
+          li.pane3.main__project-five__four.full-width.full-height 
+        .group(data-group='4')    
+          li.pane3.main__project-five__five.half-width.full-height  
+            img.modalify(src='../../images/whataburger/whataburger03.png', alt='Whataburger Campaign')
+          li.pane3.main__project-five__six.half-width.full-height  
+            img.modalify(src='../../images/whataburger/whataburger04.png', alt='Whataburger Campaign')
         .group(data-group='5')
-          li.pane3.main__project-five__six.full-width.full-height 
+          li.pane3.main__project-five__six.half-width.full-height 
+            img.modalify(src='../../images/whataburger/whataburger05.png', alt='Whataburger Campaign')
+          li.pane3.main__project-five__six.half-width.full-height  
+            img.modalify(src='../../images/whataburger/whataburger06.png', alt='Whataburger Campaign')
         .group.last(data-group='6')  
           li.pane3.main__project-five__seven.full-width.full-height
 
@@ -190,8 +247,10 @@ main.main
           li.pane3.main__project-seven__three.full-width.full-height  
         .group(data-group='3')  
           li.pane3.main__project-seven__four.full-width.full-height  
-        .group.last(data-group='4')  
-          li.pane3.main__project-seven__five.full-width.full-height  
+        .group(data-group='4')  
+          li.pane3.main__project-seven__five.full-width.full-height           
+        .group.last(data-group='5')  
+          li.pane3.main__project-seven__six.full-width.full-height  
 
   .main__project.main__project-eight#projectEight
     h2 08
