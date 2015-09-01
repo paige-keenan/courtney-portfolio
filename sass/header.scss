@@ -49,7 +49,15 @@
 
     li {
       margin-bottom: 15px;
-      border-left: 8px solid #000;
+      border-left: 8px solid #000; 
+    }
+
+    .no-border {
+      border-left: 0;
+
+      h2, a {
+        padding-left: 22px;
+      }
     }
   }
 }
