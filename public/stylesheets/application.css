@@ -440,6 +440,15 @@ html {
   @media screen and (min-width: 768px) {
     .intro .hide {
       display: none; } }
+  .intro .hide-mobile {
+    display: none; }
+    @media screen and (min-width: 768px) {
+      .intro .hide-mobile {
+        display: block; } }
+    .intro .hide-mobile img {
+      width: 50px; }
+    .intro .hide-mobile img.developer {
+      width: 70px; }
 
 @font-face {
   font-family: 'Apercu Mono';
