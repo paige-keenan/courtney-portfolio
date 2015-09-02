@@ -349,6 +349,17 @@ html {
   top: 0;
   width: 100%;
   z-index: -1; }
+  .intro h2 {
+    display: none; }
+    @media screen and (min-width: 768px) {
+      .intro h2 {
+        display: inline-block;
+        position: absolute;
+        font-size: 50px;
+        cursor: pointer;
+        top: 75px;
+        left: 50px;
+        text-transform: lowercase; } }
   .intro__container {
     padding: 20px; }
     .intro__container__image-logo {
@@ -357,19 +368,33 @@ html {
       width: 100px; }
       @media screen and (min-width: 768px) {
         .intro__container__image-logo {
-          bottom: 10px;
-          left: 100px;
+          bottom: 50px;
+          left: 50px;
           position: absolute;
-          width: 200px; } }
+          width: 100px; } }
     .intro__container__image-portrait {
       display: none; }
       @media screen and (min-width: 768px) {
         .intro__container__image-portrait {
           bottom: 50px;
+          display: block;
           position: absolute;
-          right: 100px; } }
+          right: 100px;
+          width: 475px;
+          cursor: pointer; } }
     .intro__container__content {
       margin-top: 20px; }
+      @media screen and (min-width: 768px) {
+        .intro__container__content {
+          margin: 0; } }
+    @media screen and (min-width: 768px) {
+      .intro__container__container {
+        position: absolute;
+        top: 100px;
+        right: 50px; } }
+  .intro .title {
+    position: absolute;
+    font-size: 40px; }
   .intro h1 {
     display: inline-block;
     font-size: 15px;
@@ -383,10 +408,8 @@ html {
     transform: none; }
     @media screen and (min-width: 768px) {
       .intro h1 {
-        cursor: pointer;
-        font-size: 40px;
-        margin: 100px 0 0 100px;
         overflow: hidden;
+        text-align: left;
         transition: .4s ease-in-out;
         width: 100%; } }
     .intro h1:before, .intro h1:after {
@@ -396,8 +419,11 @@ html {
     padding: 0;
     text-decoration: none; }
   .intro .hideName {
-    width: 0;
-    transition: .4s ease-in-out; }
+    transition: .4s ease-in-out;
+    width: 0; }
+  @media screen and (min-width: 768px) {
+    .intro .hide {
+      display: none; } }
 
 @font-face {
   font-family: 'Apercu Mono';
