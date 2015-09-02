@@ -8,7 +8,7 @@
   
   function rearrangeName() {
     var myIndex = 1;
-    var print = $('.container h1');
+    var print = $('.intro-container h1');
 
     print.text(names[0]);
 
