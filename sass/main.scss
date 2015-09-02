@@ -81,10 +81,14 @@ $project-ten-main:    #c2ff61; // Motion
       margin: 0 auto;
       position: absolute;
       right: 0;
-      width: 80%;
+      width: 60%;
       top: 50%;
       transform: translateY(-50%);
       -webkit-transform: translateY(-50%);
+
+      @media screen and (min-width: 768px) {
+        width: 80%;
+      }
     }
   }
 
@@ -109,37 +113,37 @@ $project-ten-main:    #c2ff61; // Motion
       color: $project-one-main;
     }
 
-    &__one {
+    li.main__project-one__one {
       background: url('../../images/sok/sok01.jpg') no-repeat center;
       background-size: cover;
     }
 
-    &__two {
+    li.main__project-one__two {
       background: $project-one-main;
     }
 
 
-    &__four {
+    li.main__project-one__four {
       background: url('../../images/sok/sok02.gif') no-repeat center;
       background-size: cover;
     } 
 
-    &__five {
+    li.main__project-one__five {
       background: url('../../images/sok/sok03.gif') no-repeat center;
       background-size: cover;
     } 
 
-    &__six {
+    li.main__project-one__six {
       background: url('../../images/sok/sok04.gif') no-repeat center;
       background-size: cover;
     } 
 
-    &__seven {
+    li.main__project-one__seven {
       background: url('../../images/sok/sok05.gif') no-repeat center;
       background-size: cover;
     }   
 
-    &__eight {
+    li.main__project-one__eight {
       background: url('../../images/sok/sok07.gif') no-repeat center;
       background-size: cover;
     }         
@@ -154,12 +158,12 @@ $project-ten-main:    #c2ff61; // Motion
       color: $project-two-main;
     }
 
-    &__one {
+    li.main__project-two__one {
       background: url('../../images/parallel/parallel01.jpg') no-repeat center;
       background-size: cover;
     }
 
-    &__two {
+    li.main__project-two__two {
       background: $project-two-main;
     }   
   } 
@@ -173,12 +177,12 @@ $project-ten-main:    #c2ff61; // Motion
       color: $project-three-main;
     }
 
-    &__one {
+    li.main__project-three__one {
       background: url('../../images/songsOfFreedom/songsOfFreedom01.jpg') no-repeat center;
       background-size: cover;
     }    
 
-    &__two {
+    li.main__project-three__two {
       background: $project-three-main;
     }    
   }   
@@ -192,12 +196,12 @@ $project-ten-main:    #c2ff61; // Motion
       color: $project-four-main;
     }
 
-    &__one {
+    li.main__project-four__one {
       background: url('../../images/voodudes/voodudes01.jpg') no-repeat center;
       background-size: cover;
     }
 
-    &__two {
+    li.main__project-four__two {
       background: $project-four-main;
     }    
   }
@@ -211,21 +215,21 @@ $project-ten-main:    #c2ff61; // Motion
       color: $project-five-main;
     }
 
-    &__one {
+    li.main__project-five__one {
       background: url('../../images/ben-howard/benHoward01.jpg') no-repeat center;
       background-size: cover;
     }
 
-    &__two {
+    li.main__project-five__two {
       background: $project-five-main;
     }
 
-    &__five {
+    li.main__project-five__five {
       background: url('../../images/ben-howard/benHoward03.jpg') no-repeat center;
       background-size: cover;
     }   
 
-    &__seven {
+    li.main__project-five__seven {
       background: url('../../images/ben-howard/benHoward05.jpg') no-repeat center;
       background-size: cover;
     }        
@@ -239,12 +243,12 @@ $project-ten-main:    #c2ff61; // Motion
       color: $project-six-main;
     }
 
-    &__one {
+    li.main__project-six__one {
       background: url('../../images/mall/mall01.jpg') no-repeat center;
       background-size: cover;
     }
 
-    &__two {
+    li.main__project-six__two {
       background: $project-six-main;
     }
 
@@ -264,21 +268,21 @@ $project-ten-main:    #c2ff61; // Motion
       color: $project-seven-main;
     }
 
-    &__one {
+    li.main__project-seven__one {
       background: url('../../images/whataburger/whataburger01.jpg') no-repeat center;
       background-size: cover;
     }
 
-    &__two {
+    li.main__project-seven__two {
       background: $project-seven-main;
     }
 
-    &__four {
+    li.main__project-seven__four {
       background: url('../../images/whataburger/whataburger02.jpg') no-repeat center;
       background-size: cover;
     }
 
-    &__seven {
+    li.main__project-seven__seven {
       background: url('../../images/whataburger/whataburger07.jpg') no-repeat center;
       background-size: cover;
     }        
@@ -293,31 +297,31 @@ $project-ten-main:    #c2ff61; // Motion
       color: $project-eight-main;
     }
 
-    &__one {
+    li.main__project-eight__one {
       background: url('../../images/card/card01.jpg') no-repeat center;
       background-size: cover;
     }
 
-    &__two {
+    li.main__project-eight__two {
       background: $project-eight-main;
     }  
 
-    &__three {
+    li.main__project-eight__three {
       background: url('../../images/card/card02.jpg') no-repeat center;
       background-size: cover;
     }
 
-    &__four {
+    li.main__project-eight__four {
       background: url('../../images/card/card03.jpg') no-repeat center;
       background-size: cover;
     }
 
-    &__five {
+    li.main__project-eight__five {
       background: url('../../images/card/card05.jpg') no-repeat center;
       background-size: cover;
     } 
 
-    &__six {
+    li.main__project-eight__six {
       background: url('../../images/card/card04.jpg') no-repeat center;
       background-size: cover;
     }                
@@ -332,12 +336,12 @@ $project-ten-main:    #c2ff61; // Motion
       color: $project-nine-main;
     }
 
-    &__one {
+    li.main__project-nine__one {
       background: url('../../images/marta/marta01.jpg') no-repeat center;
       background-size: cover;
     }
 
-    &__two {
+    li.main__project-nine__two {
       background: $project-nine-main;
     }    
   }  
@@ -349,12 +353,12 @@ $project-ten-main:    #c2ff61; // Motion
       color: $project-ten-main;
     }
 
-    &__one {
+    li.main__project-ten__one {
       background: url('../../images/alice/alice01.jpg') no-repeat center;
       background-size: cover;
     }
 
-    &__two{
+    li.main__project-ten__two{
       background: $project-ten-main;
     }                
   }          
@@ -449,5 +453,6 @@ html {
 .carousel li {
   @media screen and (min-width: 768px) {
     min-height: auto;
+    background: #F9F5ED;
   }
 }
