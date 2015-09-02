@@ -9,6 +9,20 @@
 	width: 100%;
 	z-index: -1;
 
+	h2 {
+		display: none;
+
+		@media screen and (min-width: 768px) {
+			display: inline-block;
+			position: absolute;
+			font-size: 50px;
+			cursor: pointer;
+			top: 75px;
+			left: 50px;
+			text-transform: lowercase;
+		}
+	}
+
 	&__container {
 		padding: 20px;
 
@@ -18,10 +32,10 @@
 		  width: 100px;
 
 		  @media screen and (min-width: 768px) {
-			  bottom: 10px;
-			  left: 100px;
+			  bottom: 50px;
+			  left: 50px;
 			  position: absolute;
-			  width: 200px;	  	
+			  width: 100px;	  	
 		  }	
 		}
 
@@ -30,17 +44,35 @@
 
 		  @media screen and (min-width: 768px) {
 			  bottom: 50px;
+			  display: block;
 			  position: absolute;
 			  right: 100px;
+			  width: 475px;
+			  cursor: pointer;
 		  }
 		}		
 
 		&__content {
 			margin-top: 20px;
+
+			@media screen and (min-width: 768px) {
+				margin: 0;
+			}
+		}
+
+		&__container {
+			@media screen and (min-width: 768px) {
+				position: absolute;
+				top: 100px;
+				right: 50px;
+			}
 		}
 	}
 
-
+	.title {
+		position: absolute;
+		font-size: 40px;
+	}
 
 	h1 {
 		display: inline-block;
@@ -55,12 +87,10 @@
 		transform: none;
 
 		@media screen and (min-width: 768px) {
-			cursor: pointer;
-			font-size: 40px;
-			margin: 100px 0 0 100px;
 			overflow: hidden;
+			text-align: left;
 			transition: .4s ease-in-out;    
-			width: 100%;			
+			width: 100%;
 		}
 
 		&:before,
@@ -77,8 +107,15 @@
 
 
 	.hideName {
-		width: 0;
 		transition: .4s ease-in-out;
+		width: 0;
+	}
+
+	.hide {
+
+		@media screen and (min-width: 768px) {
+  			display: none;
+		}
 	}
 }
 
