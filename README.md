@@ -1,9 +1,10 @@
 # Courtney Portfolio
 
+
 ### Git
 Naivgate to http://github.com/paige-keenan/courtneyPortfolio
 - Fork repo
-- Clone your newly cretae repo http://github.com[username]/cournteyPortfolio
+- Clone your newly create repo http://github.com[username]/cournteyPortfolio
 - Allow upstream access to repo:
  ```
 $ git remote add upstream git@github.com:paige-keenan/courtneyPortfolio.git
@@ -21,3 +22,4 @@ $ node app.js
 $ grunt watch
 ```
 4. Navigate to http://localhost:4000 to view project locally.
+
