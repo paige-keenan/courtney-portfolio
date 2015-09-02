@@ -57,6 +57,12 @@ $(function() {
                 $(this).parent('ul').css({'transform': 'translateX(' + moveHere +'%)'});
             }           
         });
+        
+
+        // If user clicks on modal image, don't push carousel.
+        $('.group img').on('click', function(event) {
+            event.stopPropagation();
+        });
     }  
 
     function changeCursor() {
