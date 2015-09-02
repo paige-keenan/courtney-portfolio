@@ -447,7 +447,8 @@ a {
   font-family: 'Apercu Mono';
   color: #000;
   display: inline-block;
-  text-decoration: underline; }
+  text-decoration: underline;
+  padding: 0 5px; }
 
 li {
   list-style: none; }
