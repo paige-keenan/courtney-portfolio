@@ -1,42 +1,39 @@
 // modal.scss
 
 .modal {
-	display: none;
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	margin: 0 auto;
 	background: rgba(18, 18, 18, 0.84);
+	bottom: 0;
+	cursor: url(../images/cursor-x.svg), auto;
+	display: none;
+	left: 0;
+	margin: 0 auto;
+	position: absolute;
+	right: 0;
+	top: 0;
 
 	&__container {
-		max-width: 60%;
 		height: 90vh;
-		position: absolute;
-		top: 5vh;
+		height: 90vh;
 		left: 0;
-		right: 0;
 		margin: 0 auto;
-		height: 90vh;
+		max-width: 60%;
+		position: absolute;
+		right: 0;
+		top: 5vh;
 	}
 
 	&ized {
-		position: absolute;
-		top: 5vh;
-		left: 0;
-		right: 0;
-		margin: 0 auto;
 		height: 90%;
+		left: 0;
+		margin: 0 auto;
+		position: absolute;
+		right: 0;
+		top: 5vh;
 	}
 
 	&.show {
 		display: block;
 	}
-}
-
-.modalify {
-	cursor: pointer;
 }
 
 .modal.white .modal__container {
