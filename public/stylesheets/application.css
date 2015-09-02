@@ -244,7 +244,7 @@ html {
     background: #F9F5ED; } }
 
 .modal {
-  background: rgba(18, 18, 18, 0.84);
+  background: rgba(255, 252, 246, 0.9);
   bottom: 0;
   cursor: url(../images/cursor-x.svg), auto;
   display: none;
@@ -271,9 +271,6 @@ html {
     top: 5vh; }
   .modal.show {
     display: block; }
-
-.modal.white .modal__container {
-  background: #fffcf6; }
 
 .header {
   position: relative;
