@@ -86,9 +86,6 @@ $(function() {
             $('.modalized').attr('src', $imgSrc);
             $('.modal').addClass('show');
 
-            if($(this).hasClass('background-modal')) {
-                $('.modal').addClass('white');
-            }
             event.preventDefault;
         });
     } 
