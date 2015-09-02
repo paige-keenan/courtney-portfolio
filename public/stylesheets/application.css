@@ -359,7 +359,23 @@ html {
         cursor: pointer;
         top: 75px;
         left: 50px;
-        text-transform: lowercase; } }
+        text-transform: lowercase; }
+        .intro h2 a {
+          text-decoration: underline;
+          font-size: 30px;
+          text-transform: capitalize; }
+        .intro h2.resume {
+          top: 300px;
+          left: 100px; }
+          @media screen and (min-width: 1300px) {
+            .intro h2.resume {
+              left: 400px; } }
+        .intro h2.work {
+          top: 200px;
+          left: 300px; }
+          @media screen and (min-width: 1200px) {
+            .intro h2.work {
+              left: 500px; } } }
   .intro__container {
     padding: 20px; }
     .intro__container__image-logo {
