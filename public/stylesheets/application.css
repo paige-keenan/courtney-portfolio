@@ -108,7 +108,10 @@
     height: 100vh;
     padding: 10vh 0; } }
 .main__project__content-container {
-  padding: 15px; }
+  padding: 20px; }
+  @media screen and (min-width: 768px) {
+    .main__project__content-container {
+      padding: 35px; } }
   .main__project__content-container__team-member {
     width: 100%; }
     .main__project__content-container__team-member p {
@@ -129,7 +132,8 @@
     width: 60%;
     max-width: 250px; } }
 .main img.large-img {
-  max-width: 600px; }
+  max-width: 600px;
+  width: 80%; }
 .main__project-one h4, .main__project-one h5 {
   color: #eae1ff; }
 .main__project-one__one {
@@ -338,8 +342,8 @@ html {
 .modalify {
   cursor: pointer; }
 
-.modalify.white .modal__container {
-  background: #fff; }
+.modal.white .modal__container {
+  background: #fffcf6; }
 
 @font-face {
   font-family: 'Apercu Mono';
@@ -389,8 +393,8 @@ h1 {
 
 h2 {
   font-family: 'Apercu Mono';
-  font-size: 50px;
-  letter-spacing: 3px;
+  font-size: 30px;
+  letter-spacing: 2px;
   padding: 0 0 5px 10px;
   display: inline-block; }
   @media screen and (min-width: 768px) {
@@ -399,8 +403,8 @@ h2 {
 
 h3 {
   font-family: 'Apercu Mono';
-  font-size: 30px;
-  letter-spacing: 1px;
+  font-size: 20px;
+  letter-spacing: 2px;
   padding: 0 0 0 10px;
   word-wrap: break-word;
   display: inline-block; }
@@ -412,20 +416,24 @@ h4 {
   background: #000;
   display: inline-block;
   font-family: 'Apercu Regular', sans-serif, serif;
-  font-size: 30px;
-  letter-spacing: 1px;
-  padding: 8px 8px 2px;
+  font-size: 24px;
+  letter-spacing: 2px;
+  padding: 2px 8px 3px;
   text-transform: uppercase; }
 
 h5 {
-  background: #000;
-  display: inline-block;
-  font-family: 'Apercu Regular', sans-serif, serif;
-  font-size: 14px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  padding: 5px;
-  margin: 10px 10px 0 0; }
+  display: none; }
+  @media screen and (min-width: 768px) {
+    h5 {
+      display: block;
+      background: #000;
+      display: inline-block;
+      font-family: 'Apercu Regular', sans-serif, serif;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      padding: 5px;
+      margin: 10px 10px 0 0; } }
 
 p {
   font-family: 'Apercu Mono';
@@ -433,14 +441,13 @@ p {
   padding: 15px 0 0;
   line-height: 22px;
   display: inline-block;
-  margin: 20px; }
+  margin: 0; }
 
 a {
   font-family: 'Apercu Mono';
   color: #000;
   display: inline-block;
-  text-decoration: underline;
-  padding: 0 5px; }
+  text-decoration: underline; }
 
 li {
   list-style: none; }
