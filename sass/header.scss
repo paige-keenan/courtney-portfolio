@@ -1,9 +1,10 @@
 // header.scss
 
 .header {
-  height: 100vh;
   position: relative; 
   width: 100%;
+  margin-top: 100vh;
+  background: #fffcf6;
 
   a {
     text-decoration: none;
