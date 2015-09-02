@@ -1,1 +1,75 @@
 // intro.scss
+
+.intro {
+	background: red;
+	height: 100%;
+	left: 0;
+	position: fixed;   
+	top: 0;
+	width: 100%;
+	z-index: -1;
+
+	&__container {
+		padding: 20px;
+
+		&__image-logo {
+		  display: inline-block;
+		  margin-top: 30vh;
+		  width: 100px;
+
+		  @media screen and (min-width: 768px) {
+			  bottom: 10px;
+			  left: 100px;
+			  position: absolute;
+			  width: 200px;	  	
+		  }	
+		}
+
+		&__image-portrait {
+		  display: none;
+
+		  @media screen and (min-width: 768px) {
+			  bottom: 50px;
+			  position: absolute;
+			  right: 100px;
+		  }
+		}		
+	}
+
+
+
+	h1 {
+		font-size: 15px;
+		position: relative;
+		transform: none;
+		left: auto;
+		text-align: left;
+		top: auto;
+		display: inline-block;
+		font-style: normal;
+
+
+		@media screen and (min-width: 768px) {
+			font-size: 40px;
+			margin: 100px 0 0 100px;
+			cursor: pointer;
+			overflow: hidden;
+			transition: .4s ease-in-out;    
+			width: 100%;			
+		}
+
+		&:before,
+		&:after {
+			display: none;
+		}
+	}
+
+
+	.hideName {
+		width: 0;
+		transition: .4s ease-in-out;
+	}
+}
+
+
+
