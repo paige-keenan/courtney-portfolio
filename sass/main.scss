@@ -98,6 +98,7 @@ $project-eleven-main:    #FF617F; // Logos
     @media screen and (min-width: 768px) {
       width: 60%;
       max-width: 250px;
+      cursor: url(../images/cursor-lightbox.svg), auto
     }
 
     &.large-img {
@@ -253,8 +254,10 @@ $project-eleven-main:    #FF617F; // Logos
       background: $project-six-main;
     }
 
-    .group[data-group='3'],
-    .group[data-group='4'] {
+    li.main__project-six__five,
+    li.main__project-six__six,
+    li.main__project-six__seven,
+    li.main__project-six__eight {
       background: url('../../images/mall/mall-background.jpg') no-repeat center;
       background-size: cover;
     }
@@ -344,7 +347,22 @@ $project-eleven-main:    #FF617F; // Logos
 
     li.main__project-nine__two {
       background: $project-nine-main;
-    }    
+    }  
+
+    li.main__project-nine__three,
+    li.main__project-nine__four,
+    li.main__project-nine__five,
+    li.main__project-nine__six,
+    li.main__project-nine__seven,
+    li.main__project-nine__eight,
+    li.main__project-nine__nine,
+    li.main__project-nine__ten,
+    li.main__project-nine__eleven,
+    li.main__project-nine__twelve {
+      background: url('../../images/mall/mall-background.jpg') no-repeat center;
+      background-size: cover;
+    }
+
   }  
 
 // PROJECT TEN
