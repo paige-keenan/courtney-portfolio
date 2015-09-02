@@ -1,35 +1,3 @@
-@keyframes headerColors {
-  0% {
-    background: #41CED6; }
-
-  18% {
-    background: #41D68F; }
-
-  48% {
-    background: #246D95; }
-
-  78% {
-    background: #6671F8; }
-
-  100% {
-    background: #41CED6; } }
-
-@-webkit-keyframes headerColors {
-  0% {
-    background: #41CED6; }
-
-  18% {
-    background: #41D68F; }
-
-  48% {
-    background: #246D95; }
-
-  78% {
-    background: #6671F8; }
-
-  100% {
-    background: #41CED6; } }
-
 .main::-webkit-scrollbar {
   display: none; }
 @media screen and (min-width: 768px) {
@@ -87,7 +55,8 @@
 @media screen and (min-width: 768px) {
   .main img {
     width: 60%;
-    max-width: 250px; } }
+    max-width: 250px;
+    cursor: url(../images/cursor-lightbox.svg), auto; } }
 .main img.large-img {
   max-width: 600px;
   width: 80%; }
@@ -154,7 +123,7 @@
   background-size: cover; }
 .main__project-six li.main__project-six__two {
   background: #b3ffda; }
-.main__project-six .group[data-group='3'], .main__project-six .group[data-group='4'] {
+.main__project-six li.main__project-six__five, .main__project-six li.main__project-six__six, .main__project-six li.main__project-six__seven, .main__project-six li.main__project-six__eight {
   background: url('../../images/mall/mall-background.jpg') no-repeat center;
   background-size: cover; }
 .main__project-seven h4, .main__project-seven h5 {
@@ -196,6 +165,9 @@
   background-size: cover; }
 .main__project-nine li.main__project-nine__two {
   background: #99dbff; }
+.main__project-nine li.main__project-nine__three, .main__project-nine li.main__project-nine__four, .main__project-nine li.main__project-nine__five, .main__project-nine li.main__project-nine__six, .main__project-nine li.main__project-nine__seven, .main__project-nine li.main__project-nine__eight, .main__project-nine li.main__project-nine__nine, .main__project-nine li.main__project-nine__ten, .main__project-nine li.main__project-nine__eleven, .main__project-nine li.main__project-nine__twelve {
+  background: url('../../images/mall/mall-background.jpg') no-repeat center;
+  background-size: cover; }
 .main__project-ten h4, .main__project-ten h5 {
   color: #c2ff61; }
 .main__project-ten li.main__project-ten__one {
@@ -270,42 +242,38 @@ html {
     background: #F9F5ED; } }
 
 .modal {
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
+  background: rgba(18, 18, 18, 0.84);
   bottom: 0;
+  cursor: url(../images/cursor-x.svg), auto;
+  display: none;
+  left: 0;
   margin: 0 auto;
-  background: rgba(18, 18, 18, 0.84); }
+  position: absolute;
+  right: 0;
+  top: 0; }
   .modal__container {
-    max-width: 60%;
     height: 90vh;
-    position: absolute;
-    top: 5vh;
+    height: 90vh;
     left: 0;
-    right: 0;
     margin: 0 auto;
-    height: 90vh; }
+    max-width: 60%;
+    position: absolute;
+    right: 0;
+    top: 5vh; }
   .modalized {
-    position: absolute;
-    top: 5vh;
+    height: 90%;
     left: 0;
-    right: 0;
     margin: 0 auto;
-    height: 90%; }
+    position: absolute;
+    right: 0;
+    top: 5vh; }
   .modal.show {
     display: block; }
-
-.modalify {
-  cursor: pointer; }
 
 .modal.white .modal__container {
   background: #fffcf6; }
 
 .header {
-  -webkit-animation: 10s headerColors infinite;
-  animation: 10s headerColors infinite;
   height: 100vh;
   position: relative;
   width: 100%; }
