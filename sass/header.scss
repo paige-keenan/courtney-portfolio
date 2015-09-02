@@ -49,11 +49,59 @@
 
     li {
       margin-bottom: 15px;
-      border-left: 8px solid #000; 
+      border-left: 8px solid #fffcf6;
+
+      &.project-one:hover {
+        border-left: 8px solid $project-one-main;
+      }
+
+      &.project-two:hover {
+        border-left: 8px solid $project-two-main;
+      }
+
+      &.project-three:hover {
+        border-left: 8px solid $project-three-main;
+      }
+
+      &.project-four:hover {
+        border-left: 8px solid $project-four-main;
+      }
+
+      &.project-five:hover {
+        border-left: 8px solid $project-five-main;
+      }
+
+      &.project-six:hover {
+        border-left: 8px solid $project-six-main;
+      }  
+
+      &.project-seven:hover {
+        border-left: 8px solid $project-seven-main;
+      }
+
+      &.project-eight:hover {
+        border-left: 8px solid $project-eight-main;
+      }
+
+      &.project-nine:hover {
+        border-left: 8px solid $project-nine-main;
+      }
+
+      &.project-ten:hover {
+        border-left: 8px solid $project-ten-main;
+      }
+
+      &.project-eleven:hover {
+        border-left: 8px solid $project-eleven-main;
+      }            
     }
 
     .no-border {
       border-left: 0;
+
+      &:hover {
+        border-left: 0;
+      }
 
       h2, a {
         padding-left: 22px;
