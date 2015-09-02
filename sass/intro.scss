@@ -1,7 +1,7 @@
 // intro.scss
 
 .intro {
-	background: red;
+	background: #fffcf6;
 	height: 100%;
 	left: 0;
 	position: fixed;   
@@ -34,25 +34,30 @@
 			  right: 100px;
 		  }
 		}		
+
+		&__content {
+			margin-top: 20px;
+		}
 	}
 
 
 
 	h1 {
-		font-size: 15px;
-		position: relative;
-		transform: none;
-		left: auto;
-		text-align: left;
-		top: auto;
 		display: inline-block;
+		font-size: 15px;
 		font-style: normal;
-
+		left: auto;
+		margin: 5px 0 0;
+		position: relative;
+		text-align: left;
+		text-transform: none;
+		top: auto;
+		transform: none;
 
 		@media screen and (min-width: 768px) {
+			cursor: pointer;
 			font-size: 40px;
 			margin: 100px 0 0 100px;
-			cursor: pointer;
 			overflow: hidden;
 			transition: .4s ease-in-out;    
 			width: 100%;			
@@ -62,6 +67,12 @@
 		&:after {
 			display: none;
 		}
+	}
+
+	a {
+		margin: 0;
+		padding: 0;
+		text-decoration: none;
 	}
 
 

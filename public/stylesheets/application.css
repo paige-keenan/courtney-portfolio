@@ -342,7 +342,7 @@ html {
         padding-left: 22px; }
 
 .intro {
-  background: red;
+  background: #fffcf6;
   height: 100%;
   left: 0;
   position: fixed;
@@ -368,25 +368,33 @@ html {
           bottom: 50px;
           position: absolute;
           right: 100px; } }
+    .intro__container__content {
+      margin-top: 20px; }
   .intro h1 {
-    font-size: 15px;
-    position: relative;
-    transform: none;
-    left: auto;
-    text-align: left;
-    top: auto;
     display: inline-block;
-    font-style: normal; }
+    font-size: 15px;
+    font-style: normal;
+    left: auto;
+    margin: 5px 0 0;
+    position: relative;
+    text-align: left;
+    text-transform: none;
+    top: auto;
+    transform: none; }
     @media screen and (min-width: 768px) {
       .intro h1 {
+        cursor: pointer;
         font-size: 40px;
         margin: 100px 0 0 100px;
-        cursor: pointer;
         overflow: hidden;
         transition: .4s ease-in-out;
         width: 100%; } }
     .intro h1:before, .intro h1:after {
       display: none; }
+  .intro a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none; }
   .intro .hideName {
     width: 0;
     transition: .4s ease-in-out; }
