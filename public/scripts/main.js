@@ -1,12 +1,12 @@
 $(function() {
     function init() {
-        preventCarousel();
-        moveCarousel();
-        changeCursor();
         if($(window).width() > 768) {
+            preventCarousel();
+            moveCarousel();
+            changeCursor();
             showModal();
             hideModal();
-        }
+        }        
     }
 
     function preventCarousel() {
