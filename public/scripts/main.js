@@ -3,7 +3,7 @@ $(function() {
         preventCarousel();
         moveCarousel();
         changeCursor();
-        if($(window).width() < 768) {
+        if($(window).width() > 768) {
             showModal();
             hideModal();
         }
