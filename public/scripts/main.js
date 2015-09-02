@@ -79,7 +79,10 @@ $(function() {
 
     function showModal() {
         $('.modalify').on('click', function(event){
+
             var $imgSrc = $(this).attr('src');
+            
+            $('.modal').removeClass('white');
             $('.modalized').attr('src', $imgSrc);
             $('.modal').addClass('show');
 
