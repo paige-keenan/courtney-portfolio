@@ -59,7 +59,11 @@ $project-ten-main:    #c2ff61; // Motion
     }
 
     &__content-container {
-      padding: 15px;
+      padding: 20px; 
+
+      @media screen and (min-width: 768px) {
+        padding: 35px;
+      }
 
       &__team-member {
         width: 100%;
@@ -93,6 +97,7 @@ $project-ten-main:    #c2ff61; // Motion
 
     &.large-img {
       max-width: 600px;
+      width: 80%;
     }
   }
 
