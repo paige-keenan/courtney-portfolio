@@ -12,6 +12,7 @@ $link-color: #000;
 @import 'modal';
 @import 'header';
 @import 'intro';
+@import 'divider';
 
 // Fonts
 @font-face {
@@ -130,6 +131,7 @@ p {
   line-height: 22px;
   display: inline-block;
   margin: 0;
+  width: 100%;
 }
 
 a {
