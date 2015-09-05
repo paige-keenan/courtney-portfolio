@@ -6,7 +6,8 @@
   function init() {
     rearrangeName();
     applyImageOverlay();
-
+    revealHidden();
+    applyBackground();
   }
   
   function rearrangeName() {
@@ -16,15 +17,10 @@
     print.text(names[0]);
 
     print.on('click', function() {
-      print.addClass('hideName');
 
       setTimeout( function(){ 
           nextElement();
-      }  , 400 );      
-      
-      setTimeout( function(){ 
-          print.removeClass('hideName');
-      }  , 400 );              
+      }  , 200 );                  
     });
 
     function nextElement() {
@@ -48,6 +44,19 @@
       myIndex = (myIndex + 1) % (images.length);
     }   
   }
+
+  function revealHidden() {
+    $('.hide-mobile img').on('click', function(event) {
+      $(this).parent('section').children('p, a').toggleClass('show');
+    });
+  }
+
+  function applyBackground() {
+    $('section.beach').on('click', function(event) {
+      $('.intro').toggleClass('beachy-background');
+    });
+  }
+
   
   $(document).on('ready', function() {
       init();
