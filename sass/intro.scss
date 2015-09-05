@@ -15,7 +15,7 @@
 		@media screen and (min-width: 768px) {
 			display: inline-block;
 			position: absolute;
-			font-size: 50px;
+			font-size: 85px;
 			cursor: pointer;
 			top: 75px;
 			left: 50px;
@@ -60,6 +60,16 @@
 			  left: 50px;
 			  position: absolute;
 			  width: 100px;	  	
+			  -webkit-transform: scale(1);
+			  -webkit-transition: 1s ease-out;
+			  z-index: -1;
+			  cursor: pointer;
+
+			  &:hover {
+			  	transform: scale(2);
+			  	-webkit-transform: scale(2);
+			  	-webkit-transition: 1s ease-in;
+			  }
 		  }	
 		}
 
@@ -71,8 +81,12 @@
 			  display: block;
 			  position: absolute;
 			  right: 100px;
-			  width: 475px;
+			  width: 300px;
 			  cursor: pointer;
+		  }
+
+		  @media screen and (min-width: 1000px) {
+		  	width: 475px;
 		  }
 		}		
 
@@ -87,8 +101,12 @@
 		&__container {
 			@media screen and (min-width: 768px) {
 				position: absolute;
-				top: 100px;
+				top: 175px;
 				right: 50px;
+			}
+
+			@media screen and (min-width: 1000px) {
+				top: 100px;
 			}
 		}
 	}
@@ -129,12 +147,6 @@
 		text-decoration: none;
 	}
 
-
-	.hideName {
-		transition: .4s ease-in-out;
-		width: 0;
-	}
-
 	.hide {
 
 		@media screen and (min-width: 768px) {
@@ -155,7 +167,57 @@
 			img.developer {
 				width: 70px;
 			}
+
+
+			p,
+			a {
+				display: none;
+				transition: .2s ease-in-out;
+			}
+
+			section {
+				position: absolute;
+
+				img {
+					cursor: pointer;
+				}
+
+				&.magnify {
+					top: 400px;
+
+					@media screen and (min-width: 768px) {
+						left: 200px;
+					}
+				}
+
+				&.beach {
+					top: 550px;
+					left: 300px;
+				}
+
+				&.developer {
+					top: 175px;
+
+					a:hover {
+						letter-spacing: 3px;
+						transition: .2s ease-in-out;
+					}
+				}
+			}
+
+			.show {
+				display: block;
+				
+				a {
+					display: block;
+				}
+			}
 		}
+	}
+
+	&.beachy-background {
+		background: url('../../images/intro/beachBackground.jpg') no-repeat center;
+		background-size: cover;
 	}
 }
 
