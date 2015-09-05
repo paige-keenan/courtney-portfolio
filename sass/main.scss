@@ -27,7 +27,7 @@ $project-eleven-main:    #FF617F; // Logos
     overflow: scroll;
     position: absolute;
     left: 25%;
-    top: 0;
+    top: 3px;
     width: 75%;
     max-width: 1000px;
   }
@@ -107,6 +107,11 @@ $project-eleven-main:    #FF617F; // Logos
       max-width: 600px;
       width: 80%;
     }
+
+    &.medium-img {
+      max-width: 500px;
+      width: 80%;
+    }    
   }
 
 
@@ -150,7 +155,34 @@ $project-eleven-main:    #FF617F; // Logos
     li.main__project-one__eight {
       background: url('../../images/sok/sok07.gif') no-repeat center;
       background-size: cover;
-    }         
+    }  
+
+    @media screen and (max-width: 768px) {
+      li.main__project-one__four {
+        background: url('../../images/sok/mobile/sok02.gif') no-repeat center;
+        background-size: cover;
+      } 
+
+      li.main__project-one__five {
+        background: url('../../images/sok/mobile/sok03.gif') no-repeat center;
+        background-size: cover;
+      } 
+
+      li.main__project-one__six {
+        background: url('../../images/sok/mobile/sok04.gif') no-repeat center;
+        background-size: cover;
+      } 
+
+      li.main__project-one__seven {
+        background: url('../../images/sok/mobile/sok05.gif') no-repeat center;
+        background-size: cover;
+      }   
+
+      li.main__project-one__eight {
+        background: url('../../images/sok/mobile/sok07.gif') no-repeat center;
+        background-size: cover;
+      }  
+    }       
   } 
 
 
@@ -208,6 +240,26 @@ $project-eleven-main:    #FF617F; // Logos
     li.main__project-four__two {
       background: $project-four-main;
     }    
+
+    li.main__project-four__three {
+      background: url('../../images/voodudes/voodudes02.jpg') no-repeat center;
+      background-size: cover;      
+    }
+
+    li.main__project-four__four {
+      background: url('../../images/voodudes/voodudes03.gif') no-repeat center;
+      background-size: cover;      
+    }
+
+    li.main__project-four__five {
+      background: url('../../images/voodudes/voodudes04.jpg') no-repeat center;
+      background-size: cover;      
+    } 
+
+    li.main__project-four__seven {
+      background: url('../../images/voodudes/voodudes06.jpg') no-repeat center;
+      background-size: cover;      
+    }            
   }
 
 
@@ -233,7 +285,7 @@ $project-eleven-main:    #FF617F; // Logos
       background-size: cover;
     }   
 
-    li.main__project-five__seven {
+    li.main__project-five__six {
       background: url('../../images/ben-howard/benHoward05.jpg') no-repeat center;
       background-size: cover;
     }        
@@ -254,14 +306,6 @@ $project-eleven-main:    #FF617F; // Logos
 
     li.main__project-six__two {
       background: $project-six-main;
-    }
-
-    li.main__project-six__five,
-    li.main__project-six__six,
-    li.main__project-six__seven,
-    li.main__project-six__eight {
-      background: url('../../images/mall/mall-background.jpg') no-repeat center;
-      background-size: cover;
     }
   } 
 
@@ -323,14 +367,19 @@ $project-eleven-main:    #FF617F; // Logos
     }
 
     li.main__project-eight__five {
-      background: url('../../images/card/card05.jpg') no-repeat center;
+      background: url('../../images/card/card04.jpg') no-repeat center;
       background-size: cover;
     } 
 
     li.main__project-eight__six {
-      background: url('../../images/card/card04.jpg') no-repeat center;
+      background: url('../../images/card/card05.jpg') no-repeat center;
       background-size: cover;
-    }                
+    }  
+
+    li.main__project-eight__seven {
+      background: url('../../images/card/card06.jpg') no-repeat center;
+      background-size: cover;
+    }                    
   } 
 
 
@@ -350,21 +399,6 @@ $project-eleven-main:    #FF617F; // Logos
     li.main__project-nine__two {
       background: $project-nine-main;
     }  
-
-    li.main__project-nine__three,
-    li.main__project-nine__four,
-    li.main__project-nine__five,
-    li.main__project-nine__six,
-    li.main__project-nine__seven,
-    li.main__project-nine__eight,
-    li.main__project-nine__nine,
-    li.main__project-nine__ten,
-    li.main__project-nine__eleven,
-    li.main__project-nine__twelve {
-      background: url('../../images/mall/mall-background.jpg') no-repeat center;
-      background-size: cover;
-    }
-
   }  
 
 // PROJECT TEN
