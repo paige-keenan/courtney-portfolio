@@ -442,7 +442,7 @@ html {
         position: absolute;
         top: 175px;
         right: 50px; } }
-    @media screen and (min-width: 1000px) {
+    @media screen and (min-width: 1200px) {
       .intro__container__container {
         top: 100px; } }
   .intro .title {
