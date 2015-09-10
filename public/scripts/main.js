@@ -6,6 +6,7 @@ $(function() {
             changeCursor();
             showModal();
             hideModal();
+            disableScroll();
         }        
     }
 
@@ -75,7 +76,18 @@ $(function() {
                 $('.group').css( 'cursor', 'url(../images/cursor-leftarrow.svg), auto' );
             }
         });    
-    }   
+    } 
+
+    function disableScroll() {
+        $(window).on('scroll touchmove mousewheel', function(e){
+            var $scrollTop = $(window).scrollTop();
+            if ($scrollTop > $(window).height()) {        
+                $('.main').css({'overflow': 'scroll'});
+            } else {
+                $('.main').css({'overflow': 'hidden'});
+            }
+        });
+    }
 
     function showModal() {
         $('.modalify').on('click', function(event){
